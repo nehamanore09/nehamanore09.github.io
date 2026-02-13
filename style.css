@@ -97,3 +97,36 @@ transition:0.3s;
 .card:hover{
 transform:translateY(-6px);
 }
+
+.skills-group{
+margin-bottom:25px;
+}
+
+.skills-group h4{
+text-align:center;
+color:#475569;
+margin-bottom:10px;
+}
+
+.tech{
+color:#64748b;
+font-size:14px;
+margin-top:8px;
+}
+
+.icons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:20px;
+}
+
+.icons a{
+text-decoration:none;
+background:white;
+padding:8px 14px;
+border-radius:20px;
+color:#0f172a;
+font-size:14px;
+}
+
