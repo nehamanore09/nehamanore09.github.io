@@ -1,0 +1,16 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+section {
+  margin-top: 40px;
+}
