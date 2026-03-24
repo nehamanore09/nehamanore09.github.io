@@ -331,7 +331,24 @@ Analyzed user feedback and market trends to support product improvement decision
 </div>
 
 </section>
+<script>
+function showSkills(category, element) {
+  const groups = document.querySelectorAll('.skill-group');
+  const tabs = document.querySelectorAll('.tab');
 
+  // hide all groups
+  groups.forEach(group => group.classList.remove('active'));
+
+  // remove active from all tabs
+  tabs.forEach(tab => tab.classList.remove('active'));
+
+  // show selected group
+  document.querySelector('.' + category).classList.add('active');
+
+  // highlight clicked tab
+  element.classList.add('active');
+}
+</script>
 
 </body>
 </html>
