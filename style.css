@@ -156,6 +156,14 @@ transition:0.25s;
 background:#dbeafe;
 }
 
+.skill-group {
+  display: none;
+}
+
+.skill-group.active {
+  display: block;
+}
+
 /* PROJECT GRID */
 .project-grid{
   display: grid;
