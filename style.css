@@ -1,4 +1,4 @@
-/* GLOBAL */
+
 body{
 margin:0;
 font-family: Inter,Segoe UI,sans-serif;
@@ -7,7 +7,7 @@ color:#1e293b;
 -webkit-font-smoothing:antialiased;
 }
 
-/* SECTION CONTAINER */
+/* SECTION */
 section{
 max-width:1100px;
 margin:150px auto;
@@ -15,7 +15,7 @@ padding:0 24px;
 text-align:center;
 }
 
-/* NAVBAR */
+
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -307,44 +307,81 @@ font-size:14px;
 color:#475569;
 }
 
-/* SKILLS TABS (NIKHIL STYLE) */
-.skills-tabs{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:16px;
-margin-bottom:40px;
+/* SKILLS TABS */
+.skills-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
 }
 
-.tab{
-padding:14px 24px;
-border-radius:30px;
-background:#e2e8f0;
-font-size:14px;
-font-weight:500;
-box-shadow:0 6px 14px rgba(0,0,0,0.05);
+.tab {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid #cbd5f5;
+  background: white;
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-.tab.active{
-background:#3b82f6;
-color:white;
+/* Active tab (same vibe as resume button) */
+.tab.active {
+  background: linear-gradient(90deg, #3b82f6, #22c55e);
+  color: white;
+  border: none;
+  box-shadow: 0 8px 20px rgba(59,130,246,0.25);
+}
+
+/* Hover */
+.tab:hover {
+  transform: translateY(-2px);
+  background: #eff6ff;
 }
 
 /* SKILLS LIST CARDS */
-.skills-list{
-display:flex;
-flex-direction:column;
-gap:16px;
-max-width:900px;
-margin:auto;
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 850px;
+  margin: auto;
 }
 
-.skill-item{
-background:#e2e8f0;
-padding:16px 22px;
-border-radius:30px;
-box-shadow:0 6px 14px rgba(0,0,0,0.04);
-text-align:left;
+.skill-item {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect like project cards */
+.skill-item:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 14px 35px rgba(59,130,246,0.15);
+}
+
+.skill-item b {
+  color: #1e293b;
+}
+.skill-group {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-group.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media(max-width:1000px){
