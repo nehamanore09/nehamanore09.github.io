@@ -158,10 +158,15 @@ background:#dbeafe;
 
 .skill-group {
   display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
 
 .skill-group.active {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* PROJECT GRID */
