@@ -74,70 +74,60 @@ through academic and personal projects.
 
 
 <!-- SKILLS -->
-<!-- SKILLS -->
 <section id="skills">
 
 <h2>SKILLS</h2>
 
 <div class="skills-tabs">
-  <button class="tab active" onclick="filterSkills('ai')">AI / ML</button>
-  <button class="tab" onclick="filterSkills('llm')">LLM & GenAI</button>
-  <button class="tab" onclick="filterSkills('prog')">Programming</button>
-  <button class="tab" onclick="filterSkills('data')">Data</button>
-  <button class="tab" onclick="filterSkills('tools')">Tools</button>
+  <button class="tab active" onclick="showSkills('ml')">AI / ML</button>
+  <button class="tab" onclick="showSkills('llm')">LLM & GenAI</button>
+  <button class="tab" onclick="showSkills('prog')">Programming</button>
+  <button class="tab" onclick="showSkills('data')">Data</button>
+  <button class="tab" onclick="showSkills('tools')">Tools</button>
 </div>
 
 <div class="skills-list">
 
-<div class="skill-item ai">
-💡 <b>Machine Learning:</b> PyTorch, TensorFlow, Scikit-learn
+<!-- AI / ML -->
+<div class="skill-group ml active">
+  <div class="skill-item">Machine Learning: Supervised, Unsupervised Learning</div>
+  <div class="skill-item">Deep Learning: Neural Networks, Basic Transformers</div>
+  <div class="skill-item">Model Evaluation: Accuracy, Loss, Overfitting</div>
 </div>
 
-<div class="skill-item ai">
-🧠 <b>NLP:</b> NLTK, SpaCy, Text Processing
+<!-- LLM -->
+<div class="skill-group llm">
+  <div class="skill-item">Transformers (Hugging Face)</div>
+  <div class="skill-item">RAG (Retrieval-Augmented Generation)</div>
+  <div class="skill-item"> LangChain, LangGraph</div>
+  <div class="skill-item"> OpenAI API, Google AI Studio</div>
+  <div class="skill-item"> Prompt Engineering</div>
 </div>
 
-<div class="skill-item ai">
-👁 <b>Computer Vision:</b> OpenCV, YOLO
+<!-- Programming -->
+<div class="skill-group prog">
+  <div class="skill-item">Python (Core + OOP)</div>
+  <div class="skill-item"> SQL (Basic Queries)</div>
 </div>
 
-<div class="skill-item llm">
-🤖 <b>LLMs:</b> Transformers (Hugging Face), RAG, Prompt Engineering
+<!-- Data -->
+<div class="skill-group data">
+  <div class="skill-item"> NumPy, Pandas</div>
+  <div class="skill-item"> Data Cleaning & Preprocessing</div>
+  <div class="skill-item">EDA (Exploratory Data Analysis)</div>
+  <div class="skill-item">PostgreSQL, MongoDB</div>
 </div>
 
-<div class="skill-item llm">
-⚡ <b>Frameworks:</b> LangChain, LangGraph
-</div>
-
-<div class="skill-item llm">
-🔗 <b>APIs:</b> OpenAI API, Google AI Studio API
-</div>
-
-<div class="skill-item prog">
-💻 <b>Programming:</b> Python (Core + OOP), SQL
-</div>
-
-<div class="skill-item data">
-📊 <b>Data Analysis:</b> NumPy, Pandas, EDA
-</div>
-
-<div class="skill-item data">
-🗄 <b>Databases:</b> PostgreSQL, MongoDB, FAISS/Chroma
-</div>
-
-<div class="skill-item tools">
-🛠 <b>Tools:</b> Git, GitHub, Jupyter Notebook
-</div>
-
-<div class="skill-item tools">
-🚀 <b>Deployment:</b> ML Pipelines, API Integration, Basic MLOps
+<!-- Tools -->
+<div class="skill-group tools">
+  <div class="skill-item"> Git, GitHub</div>
+  <div class="skill-item"> Jupyter Notebook</div>
+  <div class="skill-item">Basic ML Deployment (APIs)</div>
 </div>
 
 </div>
 
-<p class="skills-proof">
-🚀 Built Transformer (1.13M params) & PDF RAG Chatbot
-</p>
+
 
 </section>
 
